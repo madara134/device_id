@@ -9,8 +9,8 @@ class DeviceId {
   ///
   /// The deviceid could be changed on factory reset and
   /// can be easily changed with a rooted device
-  static Future<String> get getID async {
-    final String uid = await _channel.invokeMethod('getID');
+  static Future<String?> get getID async {
+    final String? uid = await _channel.invokeMethod('getID');
     return uid;
   }
 
@@ -18,8 +18,8 @@ class DeviceId {
   ///
   /// Throws [PlatformException] if the Platform version version
   /// is lower then 26
-  static Future<String> get getIMEI async {
-    final String imei = await _channel.invokeMethod('getIMEI');
+  static Future<String?> get getIMEI async {
+    final String? imei = await _channel.invokeMethod('getIMEI');
     return imei;
   }
 
@@ -27,8 +27,8 @@ class DeviceId {
   ///
   /// Throws [PlatformException] if the Platform version is
   /// lower then 26
-  static Future<String> get getMEID async {
-    final String meid = await _channel.invokeMethod('getMEID');
+  static Future<String?> get getMEID async {
+    final String? meid = await _channel.invokeMethod('getMEID');
     return meid;
   }
 }

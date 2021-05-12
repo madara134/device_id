@@ -1,11 +1,11 @@
 name: device_id
 description: Plugin for retrieving uids.
-version: 0.2.0
+version: 0.3.0
 author: TheDOme6 <dominik2003schulze@gmail.com>
 homepage: https://github.com/TheDOme6/device_id
 
 environment:
-  sdk: ">=2.0.0-dev.68.0 <3.0.0"
+  sdk: '>=2.12.0 <3.0.0'
 
 dependencies:
   flutter:

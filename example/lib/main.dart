@@ -22,8 +22,8 @@ class _MyAppState extends State<MyApp> {
 
   Future<void> initDeviceId() async {
     String deviceid;
-    String imei;
-    String meid;
+    String? imei;
+    String? meid;
 
     deviceid = await DeviceId.getID;
     try {
@@ -36,7 +36,8 @@ class _MyAppState extends State<MyApp> {
     if (!mounted) return;
 
     setState(() {
-      _deviceid = 'Your deviceid: $deviceid\nYour IMEI: $imei\nYour MEID: $meid';
+      _deviceid =
+          'Your deviceid: $deviceid\nYour IMEI: $imei\nYour MEID: $meid';
     });
   }
 
